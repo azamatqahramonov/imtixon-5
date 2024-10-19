@@ -174,13 +174,11 @@
             </div>
           </div>
         </div>
-      </section>
 
-      <section>
         <div>
           <div class="container py-[64px]">
             <div class="flex justify-between items-center">
-              <div>
+              <div class="hidden desktop:block">
                 <p
                   class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
                 >
@@ -210,7 +208,9 @@
               </div>
 
               <div>
-                <div class="flex justify-between items-center gap-3">
+                <div
+                  class="tablet:justify-center tablet:flex-row flex-col-reverse tablet:ml-32 desktop:ml-0 flex justify-between items-center gap-3"
+                >
                   <div>
                     <p
                       class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
@@ -240,18 +240,18 @@
                     <img src="./images/section-2.png" alt="" />
                   </div>
                 </div>
-                <hr class="w-[704px] border-[#D3A562] my-8" />
+                <hr
+                  class="tablet:w-[704px] w-[350px] border-[#D3A562] my-8 tablet:ml-32 desktop:ml-0"
+                />
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section>
         <div>
           <div class="container">
             <div class="flex justify-between items-center">
-              <div>
+              <div class="hidden desktop:block">
                 <p
                   class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
                 >
@@ -280,7 +280,7 @@
                 <hr class="border-[#D3A562] my-6 w-[344px]" />
               </div>
               <div>
-                <div class="mr-[100px]">
+                <div class="mr-[100px] tablet:ml-32 desktop:ml-0">
                   <p
                     class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
                   >
@@ -310,24 +310,24 @@
                       декабря.
                     </p>
                     <button
-                      class="text-sm text-center font-normal leading-5 w-[126px] h-[40px] p-[10px_24px] gap-[10px] rounded-[12px] bg-[#D3A562] text-[#FFFFFF]"
+                      class="hidden tablet:block text-sm text-center font-normal leading-5 w-[126px] h-[40px] p-[10px_24px] gap-[10px] rounded-[12px] bg-[#D3A562] text-[#FFFFFF]"
                     >
                       Подробнее
                     </button>
                   </div>
                 </div>
-                <hr class="border-[#D3A562] my-6 w-[704px]" />
+                <hr
+                  class="border-[#D3A562] my-6 tablet:ml-32 desktop:ml-0 w-[350px] tablet:w-[704px]"
+                />
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section>
         <div>
           <div class="container">
             <div class="flex justify-between items-center">
-              <div>
+              <div class="hidden desktop:block">
                 <p
                   class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
                 >
@@ -355,53 +355,58 @@
                 </p>
                 <hr class="border-[#D3A562] my-6 w-[344px]" />
               </div>
-              <div class="mr-[100px]">
-                <p
-                  class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
-                >
-                  01 декабря 2022
-                </p>
-                <p
-                  class="py-3 text-[16px] font-normal leading-[24px] text-left text-[#322E29]"
-                >
-                  СОБЫТИЕ
-                </p>
-                <h2
-                  class="py-3 text-[24px] font-semibold leading-[32px] tracking-[0.02em] text-left text-[#322E29]"
-                >
-                  Вакцинный туризм: <br />
-                  последние сводки с полей
-                </h2>
-                <div class="flex gap-[48px]">
+              <div>
+                <div class="mr-[100px] tablet:ml-32 desktop:ml-0">
                   <p
-                    class="py-3 text-[14px] font-normal leading-[24px] tracking-[0.01em] text-left text-[#322E29]"
+                    class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
                   >
-                    Одобрена инициатива министра туризма Израиля о допуске в
-                    <br />
-                    страну туристов, привитых российской вакциной “Спутник V”.
-                    <br />
-                    Наши путешественники смогут приезжать в Израиль уже с 1
-                    <br />
-                    декабря.
+                    01 декабря 2022
                   </p>
-                  <button
-                    class="text-sm text-center font-normal leading-5 w-[126px] h-[40px] p-[10px_24px] gap-[10px] rounded-[12px] bg-[#D3A562] text-[#FFFFFF]"
+                  <p
+                    class="py-3 text-[16px] font-normal leading-[24px] text-left text-[#322E29]"
                   >
-                    Подробнее
-                  </button>
+                    СОБЫТИЕ
+                  </p>
+                  <h2
+                    class="py-3 text-[24px] font-semibold leading-[32px] tracking-[0.02em] text-left text-[#322E29]"
+                  >
+                    Вакцинный туризм: <br />
+                    последние сводки с полей
+                  </h2>
+                  <div class="flex gap-[48px]">
+                    <p
+                      class="py-3 text-[14px] font-normal leading-[24px] tracking-[0.01em] text-left text-[#322E29]"
+                    >
+                      Одобрена инициатива министра туризма Израиля о допуске в
+                      <br />
+                      страну туристов, привитых российской вакциной “Спутник V”.
+                      <br />
+                      Наши путешественники смогут приезжать в Израиль уже с 1
+                      <br />
+                      декабря.
+                    </p>
+                    <button
+                      class="hidden tablet:block text-sm text-center font-normal leading-5 w-[126px] h-[40px] p-[10px_24px] gap-[10px] rounded-[12px] bg-[#D3A562] text-[#FFFFFF]"
+                    >
+                      Подробнее
+                    </button>
+                  </div>
                 </div>
+                <hr
+                  class="border-[#D3A562] tablet:ml-32 desktop:ml-0 my-6 w-[350px] tablet:w-[704px]"
+                />
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section>
         <div>
           <div class="container">
+            <div class="flex justify-between items-center"></div>
+
             <div class="flex justify-between items-center">
               <div>
-                <div>
+                <div class="hidden desktop:block">
                   <p
                     class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
                   >
@@ -430,7 +435,7 @@
                   <hr class="border-[#D3A562] my-6 w-[344px]" />
                 </div>
 
-                <div>
+                <div class="hidden desktop:block">
                   <p
                     class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
                   >
@@ -462,9 +467,14 @@
 
               <div class="relative">
                 <div>
-                  <img src="./images/section-3.png" alt="" />
+                  <img
+                    class="hidden tablet:block tablet:mr-[130px] desktop:mr-0"
+                    src="./images/section-3.png"
+                    alt=""
+                  />
+
                   <div
-                    class="w-[406px] h-[332px] pl-8 pt-8 bg-[#888C94] absolute top-[350px]"
+                    class="w-[406px] h-[332px] pl-8 pt-8 bg-[#888C94] tablet:absolute top-[350px]"
                   >
                     <p
                       class="text-[13px] italic font-normal leading-[24px] text-left text-[#FFFFFF]"
@@ -495,71 +505,223 @@
                 </div>
               </div>
             </div>
+
+            <div
+              class="flex justify-between items-center py-16 gap-6 tablet:ml-10 desktop:ml-0"
+            >
+              <div>
+                <img
+                  class="hidden desktop:block"
+                  src="./images/section-4.png"
+                  alt=""
+                />
+                <img
+                  class="hidden tablet:block desktop:hidden"
+                  src="./images/tablet-section.png"
+                  alt=""
+                />
+              </div>
+              <div class="mr-[40px]">
+                <p
+                  class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
+                >
+                  01 декабря 2022
+                </p>
+                <p
+                  class="text-[16px] font-normal leading-[24px] text-left text-[#322E29] py-3"
+                >
+                  Событие
+                </p>
+                <h2
+                  class="text-[32px] font-semibold leading-[40px] tracking-[0.02em] text-left text-[#322E29] py-3"
+                >
+                  Одобрена инициатива
+                  <br class="block desktop:hidden" />
+                  министра <br class="hidden desktop:block" />
+                  туризма <br class="tablet:hidden" />
+                  Израиля
+                  <br class="hidden tablet:block desktop:hidden" />
+                  о допуске <br class="tablet:hidden" />
+                  в <br class="hidden desktop:block" />
+                  страну <br class="hidden tablet:block desktop:hidden" />
+                  туристов, <br class="tablet:hidden" />
+                  привитых <br />
+                  российской вакциной <br />
+                  “Спутник V”.
+                </h2>
+                <div class="flex gap-[48px]">
+                  <p
+                    class="text-[16px] font-normal leading-[24px] tracking-[0.01em] text-left text-[#322E29] py-3"
+                  >
+                    Одобрена инициатива министра туризма
+                    <br class="tablet:hidden" />
+                    Израиля о допуске в
+                    <br />
+                    страну туристов, привитых российской
+                    <br class="tablet:hidden" />
+                    вакциной “Спутник V”.
+                    <br />
+                    Наши путешественники смогут <br class="tablet:hidden" />
+                    приезжать в Израиль уже с 1
+                    <br />
+                    декабря.
+                  </p>
+                  <button
+                    class="hidden tablet:block text-sm text-center font-normal leading-5 w-[126px] h-[40px] p-[10px_24px] gap-[10px] rounded-[12px] bg-[#D3A562] text-[#FFFFFF]"
+                  >
+                    Подробнее
+                  </button>
+                </div>
+                <hr class="border-[#D3A562] my-6 w-[350px] tablet:w-[704px]" />
+              </div>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section>
         <div>
-          <div class="container flex justify-between items-center py-16">
-            <div>
-              <img src="./images/section-4.png" alt="" />
-            </div>
-            <div class="mr-[40px]">
+          <div class="container">
+            <div class="desktop:hidden">
               <p
                 class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
               >
                 01 декабря 2022
               </p>
               <p
-                class="text-[16px] font-normal leading-[24px] text-left text-[#322E29] py-3"
+                class="py-3 text-[16px] font-normal leading-[24px] text-left text-[#322E29]"
               >
-                Событие
+                ПУТЕШЕСТВИ
               </p>
               <h2
-                class="text-[32px] font-semibold leading-[40px] tracking-[0.02em] text-left text-[#322E29] py-3"
+                class="py-3 text-[24px] font-semibold leading-[32px] tracking-[0.02em] text-left text-[#322E29]"
               >
-                Одобрена инициатива министра <br />
-                туризма Израиля о допуске в <br />
-                страну туристов, привитых <br />
-                российской вакциной <br />
-                “Спутник V”.
+                Patina maldives: если хочется чего-нибудь новенького!
               </h2>
-              <div class="flex gap-[48px]">
-                <p
-                  class="text-[16px] font-normal leading-[24px] tracking-[0.01em] text-left text-[#322E29] py-3"
-                >
-                  Одобрена инициатива министра туризма Израиля о допуске в
-                  <br />
-                  страну туристов, привитых российской вакциной “Спутник V”.
-                  <br />
-                  Наши путешественники смогут приезжать в Израиль уже с 1 <br />
-                  декабря.
-                </p>
-                <button
-                  class="text-sm text-center font-normal leading-5 w-[126px] h-[40px] p-[10px_24px] gap-[10px] rounded-[12px] bg-[#D3A562] text-[#FFFFFF]"
-                >
-                  Подробнее
-                </button>
-              </div>
-              <hr class="border-[#D3A562] my-6 w-[704px]" />
+              <p
+                class="py-3 text-[14px] font-normal leading-[24px] tracking-[0.01em] text-left text-[#322E29]"
+              >
+                Одобрена инициатива министра туризма Израиля о допуске в страну
+                туристов, привитых российской вакциной “Спутник V”. <br />
+                Наши путешественники смогут приезжать в Израиль уже с 1 декабря.
+              </p>
+              <hr class="border-[#D3A562] my-6 w-[344px]" />
+            </div>
+            <div class="desktop:hidden">
+              <p
+                class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
+              >
+                01 декабря 2022
+              </p>
+              <p
+                class="py-3 text-[16px] font-normal leading-[24px] text-left text-[#322E29]"
+              >
+                ПУТЕШЕСТВИ
+              </p>
+              <h2
+                class="py-3 text-[24px] font-semibold leading-[32px] tracking-[0.02em] text-left text-[#322E29]"
+              >
+                Patina maldives: если хочется чего-нибудь новенького!
+              </h2>
+              <p
+                class="py-3 text-[14px] font-normal leading-[24px] tracking-[0.01em] text-left text-[#322E29]"
+              >
+                Одобрена инициатива министра туризма Израиля о допуске в страну
+                туристов, привитых российской вакциной “Спутник V”. <br />
+                Наши путешественники смогут приезжать в Израиль уже с 1 декабря.
+              </p>
+              <hr class="border-[#D3A562] my-6 w-[344px]" />
+            </div>
+            <div class="desktop:hidden">
+              <p
+                class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
+              >
+                01 декабря 2022
+              </p>
+              <p
+                class="py-3 text-[16px] font-normal leading-[24px] text-left text-[#322E29]"
+              >
+                ПУТЕШЕСТВИ
+              </p>
+              <h2
+                class="py-3 text-[24px] font-semibold leading-[32px] tracking-[0.02em] text-left text-[#322E29]"
+              >
+                Patina maldives: если хочется чего-нибудь новенького!
+              </h2>
+              <p
+                class="py-3 text-[14px] font-normal leading-[24px] tracking-[0.01em] text-left text-[#322E29]"
+              >
+                Одобрена инициатива министра туризма Израиля о допуске в страну
+                туристов, привитых российской вакциной “Спутник V”. <br />
+                Наши путешественники смогут приезжать в Израиль уже с 1 декабря.
+              </p>
+              <hr class="border-[#D3A562] my-6 w-[344px]" />
+            </div>
+            <div class="desktop:hidden">
+              <p
+                class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
+              >
+                01 декабря 2022
+              </p>
+              <p
+                class="py-3 text-[16px] font-normal leading-[24px] text-left text-[#322E29]"
+              >
+                ПУТЕШЕСТВИ
+              </p>
+              <h2
+                class="py-3 text-[24px] font-semibold leading-[32px] tracking-[0.02em] text-left text-[#322E29]"
+              >
+                Patina maldives: если хочется чего-нибудь новенького!
+              </h2>
+              <p
+                class="py-3 text-[14px] font-normal leading-[24px] tracking-[0.01em] text-left text-[#322E29]"
+              >
+                Одобрена инициатива министра туризма Израиля о допуске в страну
+                туристов, привитых российской вакциной “Спутник V”. <br />
+                Наши путешественники смогут приезжать в Израиль уже с 1 декабря.
+              </p>
+              <hr class="border-[#D3A562] my-6 w-[344px]" />
+            </div>
+            <div class="mobileLarge:hidden tablet:block desktop:hidden">
+              <p
+                class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
+              >
+                01 декабря 2022
+              </p>
+              <p
+                class="py-3 text-[16px] font-normal leading-[24px] text-left text-[#322E29]"
+              >
+                ПУТЕШЕСТВИ
+              </p>
+              <h2
+                class="py-3 text-[24px] font-semibold leading-[32px] tracking-[0.02em] text-left text-[#322E29]"
+              >
+                Patina maldives: если хочется чего-нибудь новенького!
+              </h2>
+              <p
+                class="py-3 text-[14px] font-normal leading-[24px] tracking-[0.01em] text-left text-[#322E29]"
+              >
+                Одобрена инициатива министра туризма Израиля о допуске в страну
+                туристов, привитых российской вакциной “Спутник V”. <br />
+                Наши путешественники смогут приезжать в Израиль уже с 1 декабря.
+              </p>
+              <hr class="border-[#D3A562] my-6 w-[344px]" />
             </div>
           </div>
         </div>
-      </section>
 
-      <section>
         <div>
-          <div class="container flex justify-center py-10">
+          <div class="flex justify-center py-10">
             <button
               class="w-[141px] h-[44px] p-[10px_24px] rounded-[20px] flex items-center justify-center bg-[#D3A562] text-[#FFFFFF] text-[16px] font-semibold leading-[24px] tracking-[0.01em]"
             >
               Все анонсы
             </button>
-            
           </div>
           <div class="relative flex justify-center">
-            <img class="absolute top-[-110px]" src="./images/btn-shadow.png" alt="" />
+            <img
+              class="absolute top-[-110px]"
+              src="./images/btn-shadow.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
