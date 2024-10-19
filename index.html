@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vite + Tailwind CSS</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-10 bg-white">
+      <nav class="container flex justify-between items-center py-[56px]">
+        <div>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+
+        <div class="flex gap-12 items-center">
+          <div>
+            <ul class="hidden desktop:flex desktop:gap-10">
+              <li>
+                <a
+                  class="font-bitter text-sm font-normal leading-5 text-left text-[#322E29] relative inline-block no-underline hover:text-red-500 transition duration-300"
+                  href="#"
+                  >Отели</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-bitter text-sm font-normal leading-5 text-left text-[#322E29] relative inline-block no-underline hover:text-red-500 transition duration-300"
+                  href="#"
+                  >Путешествия</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-bitter text-sm font-normal leading-5 text-left text-[#322E29] relative inline-block no-underline hover:text-red-500 transition duration-300"
+                  href="#"
+                  >Экскурсии</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-bitter text-sm font-normal leading-5 text-left text-[#322E29] relative inline-block no-underline hover:text-red-500 transition duration-300"
+                  href="#"
+                  >Страны</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <img
+            id="menuButton"
+            class="cursor-pointer"
+            src="./images/menu-button.svg"
+            alt="Menu"
+          />
+
+          <div
+            id="menu"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center tablet:hidden"
+          >
+            <div
+              class="bg-white p-4 rounded relative w-full h-full flex flex-col justify-center items-center"
+            >
+              <img
+                id="closeButton"
+                class="absolute top-1 right-1 cursor-pointer w-10 h-10"
+                src="./images/x-icon.png"
+                alt="Close"
+              />
+              <img
+                class="absolute top-1 cursor-pointer"
+                src="./images/logo.svg"
+                alt=""
+              />
+
+              <div class="flex flex-col justify-center items-center gap-11">
+                <a
+                  href="#"
+                  class="px-4 py-2 relative inline-block no-underline hover:text-red-500 transition duration-300"
+                  >Отели</a
+                >
+                <a
+                  href="#"
+                  class="relative inline-block no-underline hover:text-red-500 transition duration-300 px-4 py-2"
+                  >Путешествия</a
+                >
+                <a
+                  href="#"
+                  class="relative inline-block no-underline hover:text-red-500 transition duration-300 px-4 py-2"
+                  >Экскурсии</a
+                >
+                <a
+                  href="#"
+                  class="relative inline-block no-underline hover:text-red-500 transition duration-300 px-4 py-2"
+                  >Страны</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <img
+            class="hidden mobileLarge:block"
+            src="./images/search.svg"
+            alt=""
+          />
+          <button
+            class="font-bitter text-sm font-normal leading-5 text-left w-[91px] h-[40px] p-[10px_24px] gap-[10px] rounded-[12px] bg-[#F8F3EC] text-[#322E29]"
+          >
+            Войти
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <div class="container py-16">
+            <div class="relative flex justify-center">
+              <img
+                class="hidden tablet:block"
+                src="./images/hero-img.png"
+                alt=""
+              />
+              <img
+                class="absolute top-10 hidden tablet:block"
+                src="./images/hero-shadow.png"
+                alt=""
+                style="clip-path: inset(82% 0 0 0)"
+              />
+              <img
+                class="tablet:hidden"
+                src="./images/hero-bg-mobile.png"
+                alt=""
+              />
+            </div>
+            <div class="relative">
+              <div
+                class="absolute top-[-420px] left-[30px] mobileLarge:top-[-400px] mobileLarge:left-[40px] tablet:top-[-350px] tablet:left-[80px] desktop:top-[-390px] desktop:left-[190px]"
+              >
+                <h1
+                  class="text-3xl font-bold leading-[56px] text-left text-[#322E29]"
+                >
+                  КУРШЕВЕЛЬ <br />
+                  НА ВСЕ ВРЕМЕНА!
+                </h1>
+                <p
+                  class="text-base font-normal leading-8 tracking-tight text-left text-[#322E29] py-6"
+                >
+                  В самом востребованном отеле <br />
+                  курорта Le Lana с 28 декабря по 2 <br />
+                  января доступны для бронирования
+                </p>
+                <button
+                  class="text-sm font-normal leading-5 tracking-[0.01em] flex items-center w-[126px] h-[40px] p-2.5 px-6 gap-2 rounded-[12px] bg-[#D3A562] text-[#FFFFFF] py-6"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+            <div
+              class="relative top-[-70px] left-[5px] mobileLarge:top-[-80px] mobileLarge:left-[30px] tablet:top-[-390px] tablet:left-[800px] desktop:top-[-440px] desktop:left-[1100px]"
+            >
+              <div class="absolute grid grid-cols-3 tablet:grid-cols-1">
+                <img class="p-4" src="./images/hero-img-1.png" alt="" />
+                <img class="p-4" src="./images/hero-img-2.png" alt="" />
+                <img class="p-4" src="./images/hero-img-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
