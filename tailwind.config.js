@@ -17,7 +17,7 @@ export default {
           DEFAULT: "100%",
           mobileLarge: "568px",
           tablet: "990px",
-          desktop: "1182px",
+          desktop: "1203px",
         },
       },
     },

@@ -109,7 +109,7 @@
             alt=""
           />
           <button
-            class="hidden mobileLarge:block font-bitter text-sm font-normal leading-5 text-left w-[91px] h-[40px] p-[10px_24px] gap-[10px] rounded-[12px] bg-[#F8F3EC] text-[#322E29]"
+            class="shiny-cta hidden mobileLarge:block font-bitter text-sm font-normal leading-5 text-left w-[91px] h-[40px] p-[10px_24px] gap-[10px] rounded-[12px] bg-[#F8F3EC] text-[#322E29]"
           >
             Войти
           </button>
@@ -164,7 +164,7 @@
               </div>
             </div>
             <div
-              class="relative top-[-70px] left-[5px] mobileLarge:top-[-80px] mobileLarge:left-[40px] tablet:top-[-390px] tablet:left-[700px] desktop:top-[-420px] desktop:left-[730px]"
+              class="relative top-[-70px] left-[5px] mobileLarge:top-[-80px] mobileLarge:left-[40px] tablet:top-[-390px] tablet:left-[700px] desktop:top-[-490px] desktop:left-[730px]"
             >
               <div class="absolute grid grid-cols-3 tablet:grid-cols-1">
                 <img class="p-4" src="./images/hero-img-1.png" alt="" />
@@ -402,9 +402,9 @@
 
         <div>
           <div class="container">
-            <div class="flex justify-between items-center"></div>
-
-            <div class="flex justify-between items-center">
+            <div
+              class="flex justify-between items-center tablet:ml-[100px] desktop:ml-0"
+            >
               <div>
                 <div class="hidden desktop:block">
                   <p
@@ -521,7 +521,9 @@
                   alt=""
                 />
               </div>
-              <div class="mr-[10px] mobileLarge:mr-[0px] desktop:mr-[0px] desktop:ml-[0px]">
+              <div
+                class="mr-[10px] mobileLarge:mr-[0px] desktop:mr-[0px] desktop:ml-[0px]"
+              >
                 <p
                   class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
                 >
@@ -767,14 +769,23 @@
           <div class="py-8 mobileLarge:ml-[120px]">
             <ul>
               <li><a class="ml-7 tablet:ml-12" href="#">Мы в соц.сетях</a></li>
-              <li class="flex gap-4">
+
+              <li class="flex py-3 gap-4">
                 <img
-                  class="py-4"
+                  class="social-icon fadeIn cursor-pointer"
                   src="./images/ri-facebook-box-fill.svg"
-                  alt=""
+                  alt="Facebook"
                 />
-                <img src="./images/ri-youtube-fill.svg" alt="" />
-                <img src="./images/instagram.svg" alt="" />
+                <img
+                  class="social-icon fadeIn cursor-pointer"
+                  src="./images/ri-youtube-fill.svg"
+                  alt="YouTube"
+                />
+                <img
+                  class="social-icon fadeIn cursor-pointer"
+                  src="./images/instagram.svg"
+                  alt="Instagram"
+                />
               </li>
             </ul>
           </div>
@@ -797,9 +808,9 @@
           </div>
 
           <div class="flex gap-2 justify-center mb-4">
-            <img src="./images/visa.svg" alt="Visa Logo" />
-            <img src="./images/visa.svg" alt="Visa Logo" />
-            <img src="./images/visa.svg" alt="Visa Logo" />
+            <img class="cursor-pointer" src="./images/visa.svg" alt="" />
+            <img class="cursor-pointer" src="./images/visa.svg" alt="" />
+            <img class="cursor-pointer" src="./images/visa.svg" alt="" />
           </div>
         </div>
       </div>

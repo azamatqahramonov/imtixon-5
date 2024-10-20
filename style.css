@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html {
+body,
+html {
   overflow-x: hidden;
   font-family: "Bitter", serif;
   margin: 0;
@@ -10,8 +11,22 @@ body, html {
   width: 100%;
 }
 
-
 * {
   box-sizing: border-box;
 }
 
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.social-icon {
+  animation: zoom 1.5s ease-in-out infinite;
+}
