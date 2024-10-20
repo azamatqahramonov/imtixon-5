@@ -61,10 +61,10 @@
 
           <div
             id="menu"
-            class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center tablet:hidden"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center desktop:hidden"
           >
             <div
-              class="bg-white p-4 rounded relative w-full h-full flex flex-col justify-center items-center"
+              class="bg-white p-4 rounded relative w-full h-full max-w-[100vh] max-h-[100vh] flex flex-col justify-center items-center"
             >
               <img
                 id="closeButton"
@@ -131,7 +131,7 @@
                 class="absolute top-10 hidden tablet:block"
                 src="./images/hero-shadow.png"
                 alt=""
-                style="clip-path: inset(82% 0 0 0)"
+                style="clip-path: inset(80% 0 0 0)"
               />
               <img
                 class="tablet:hidden"
@@ -164,7 +164,7 @@
               </div>
             </div>
             <div
-              class="relative top-[-70px] left-[5px] mobileLarge:top-[-80px] mobileLarge:left-[30px] tablet:top-[-390px] tablet:left-[800px] desktop:top-[-420px] desktop:left-[830px]"
+              class="relative top-[-70px] left-[5px] mobileLarge:top-[-80px] mobileLarge:left-[40px] tablet:top-[-390px] tablet:left-[700px] desktop:top-[-420px] desktop:left-[730px]"
             >
               <div class="absolute grid grid-cols-3 tablet:grid-cols-1">
                 <img class="p-4" src="./images/hero-img-1.png" alt="" />
@@ -474,7 +474,7 @@
                   />
 
                   <div
-                    class=" w-[272px] h-[500px] mr-32 mobileLarge:w-[406px] mobileLarge:h-[332px] pl-8 pt-8 bg-[#888C94] tablet:absolute top-[350px]"
+                    class="w-[272px] h-[500px] mr-32 mobileLarge:mr-[450px] mobileLarge:w-[406px] mobileLarge:h-[332px] pl-8 pt-8 bg-[#888C94] tablet:absolute top-[350px]"
                   >
                     <p
                       class="text-[13px] italic font-normal leading-[24px] text-left text-[#FFFFFF]"
@@ -507,7 +507,7 @@
             </div>
 
             <div
-              class="flex justify-between items-center py-16 gap-6 tablet:ml-10 desktop:ml-0"
+              class="flex justify-between items-center py-16 gap-6 mobileLarge:mr-36 tablet:ml-10 desktop:ml-0"
             >
               <div>
                 <img
@@ -521,7 +521,7 @@
                   alt=""
                 />
               </div>
-              <div class="mr-[10px]">
+              <div class="mr-[10px] mobileLarge:mr-[0px] desktop:mr-[0px]">
                 <p
                   class="text-[13px] italic font-normal leading-[24px] text-left text-[#D3A562]"
                 >
@@ -726,6 +726,84 @@
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="container py-16">
+        <div class="flex justify-between items-center">
+          <div>
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <div class="flex gap-6 items-center">
+            <ul class="hidden tablet:flex gap-6">
+              <li><a href="#">Отели</a></li>
+              <li><a href="#">Путешествия</a></li>
+              <li><a href="#">Экскурсии</a></li>
+              <li><a href="#">Страны</a></li>
+            </ul>
+            <img class="cursor-pointer" src="./images/menu-button.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 mobileLarge:grid-cols-2 tablet:grid-cols-3 place-items-center py-20"
+        >
+          <div class="py-8">
+            <ul>
+              <li><a href="#">Москва</a></li>
+              <li class="py-4"><a href="#">+7 (499) 995-21-79</a></li>
+              <li class="py-4">
+                <a class="py-4" href="#">info@alacarte.world</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="py-8">
+            <ul>
+              <li><a href="#">Дубай</a></li>
+              <li class="py-4"><a href="#">+971 (4) 000-0000</a></li>
+              <li class="py-3"><a href="#">info@alacarte.world</a></li>
+            </ul>
+          </div>
+
+          <div class="py-8 mobileLarge:ml-[120px]">
+            <ul>
+              <li><a class="ml-7 tablet:ml-12" href="#">Мы в соц.сетях</a></li>
+              <li class="flex gap-4">
+                <img
+                  class="py-4"
+                  src="./images/ri-facebook-box-fill.svg"
+                  alt=""
+                />
+                <img src="./images/ri-youtube-fill.svg" alt="" />
+                <img src="./images/instagram.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center w-full desktop:justify-between desktop:flex-row gap-6"
+        >
+          <div class="flex mb-2">
+            <p>Курс на 06.11.2021</p>
+          </div>
+
+          <div
+            class="grid bg-[#888C94] text-[#FFFFFF] w-[272px] h-[152px] mobileLarge:grid-cols-2 rounded-[28px] grid-cols-1 desktop:grid-cols-2 desktop:place-items-center tablet:grid-cols-4 mobileLarge:w-[492px] mobileLarge:h-[110px] place-items-center tablet:w-[894px] tablet:h-[48px] desktop:text-center desktop:w-[351px] desktop:h-[48px]"
+          >
+            <p>RUB/EUR 84,4674</p>
+            <p>RUB/USD 72,9173</p>
+            <p class="desktop:hidden">RUB/EUR 84,4674</p>
+            <p class="desktop:hidden">RUB/USD 72,9173</p>
+          </div>
+
+          <div class="flex gap-2 justify-center mb-4">
+            <img src="./images/visa.svg" alt="Visa Logo" />
+            <img src="./images/visa.svg" alt="Visa Logo" />
+            <img src="./images/visa.svg" alt="Visa Logo" />
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="./main.js"></script>
   </body>
