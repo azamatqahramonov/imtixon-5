@@ -6,7 +6,7 @@ export default {
       screens: {
         mobileLarge: "568px",
         tablet: "990px",
-        desktop: "1203px",
+        desktop: "1440px",
       },
       container: {
         center: true,
@@ -17,7 +17,7 @@ export default {
           DEFAULT: "100%",
           mobileLarge: "568px",
           tablet: "990px",
-          desktop: "1440px",
+          desktop: "1182px",
         },
       },
     },
